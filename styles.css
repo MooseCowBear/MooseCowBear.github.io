@@ -45,7 +45,9 @@ h1{
   	justify-content: center;
   	margin-top: 2em;
 }
-
+button{
+	color: #481E65;
+}
 
 /* TABLE STYLING */ 
 .table-div{ 
