@@ -53,8 +53,8 @@ button{
 .table-div{ 
   	width: 100%;
   	overflow: auto;
-  	margin-left: 2em;;
-  	margin-right: 2em;
+  	/* margin-left: 2em;;
+  	margin-right: 2em; */
   	max-height: 600px;
 }
 
