@@ -34,7 +34,9 @@ h1, p{
 body{
   	font-family: sans-serif;
   	color: #481E65;
-  	min-width: 700px;
+  	width: 100%; 
+	margin: 0; 
+	padding: 0;
 }
 
 h1{
