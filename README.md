@@ -1,6 +1,9 @@
 # plttr
 
-plttr was developed as a simple-to-use and extremely stripped down, web-based Excel-alternative intended for use in an introductory physics course. 
+Welcome to my first project. 
+
+
+plttr was developed as a simple-to-use and extremely stripped down, web-based Excel-alternative intended for use in an introductory physics course. It was inspired by nPlot. 
 
 
 Its main features are a table that allows students to add calculated columns and the ability to perform several canned fits on data obtained from the table. 
@@ -9,7 +12,7 @@ Its main features are a table that allows students to add calculated columns and
 Any two columns maybe selected for the x- and y-axes, and if desired, the student may also chose columns for x-error and y-error. The application will calculate, graph, and report the coefficients of the selected fit, the standard errors of those coefficients, and the fit’s RMSE. 
 
 
-Students have the option of excluding any point(s) they desire from the fit. These points will appear in the graph grayed out, so students can see where they fall in relation to the other points and to the regression line, but they are not factored into the calculations for the regression line. 
+Students have the option of excluding any point(s) they desire from the fit. These points will appear in the graph grayed out, so students can see where they fall in relation to the other points, but they are not factored into the calculations for the regression line. 
 
 
 ### The Table
@@ -57,7 +60,7 @@ Calculated values are rounded to five significant digits.
 1. When the student includes Rate of Change in a formula, all non-column buttons on the calculator will be disabled until the two columns for the slope have been chosen. 
 
 
-2. Without slope, we could’ve limited our (re)calculations to the row in which a change has been made. Slope interferes with our ability to do this. So instead of keeping detailed and convoluted track of which cells affect which others, we recalculate the whole table whenever a change has been made. It kills our soul slightly to do this, but so would the alternative. 
+2. Without slope, (re)calculations could've been limited to the row in which a change is made. Slope interferes with the ability to do this. So instead of keeping detailed and convoluted track of which cells affect which others, the whole table recalculates whenever a change is made. It kills my soul slightly to do this, but so would the alternative and the table will be small. 
 
 
 ### The Fits
@@ -65,15 +68,20 @@ Calculated values are rounded to five significant digits.
 
 All of the fits use single value decomposition. All of the fits, except for exponential and power law, use SVD exclusively. Exponential and power law are performed using the Levenberg–Marquardt method. They use SVD on a log transformation of the data to obtain a starting point for LM. 
 
+
 Any data points containing singularities, such as negative x-values for square root, are ignored. 
+
 
 At least three valid data points are needed in order to perform any fit. If a fit cannot be performed due to insufficient data, this is stated above the graph. In this case, a graph of only the data will be presented. 
 
+
 No restrictions are made as so which fits may be performed on the chosen data. This means even terrible fits will be calculated and displayed. In the case of exponential and power law, LM may not reach convergence. Nevertheless, the result will be displayed. 
 
-RMSE is calculated using only x-values that are not singularities. Therefore a relatively low RMSE does not guarantee a better fit. We indicate the presence of one or more singularities with a “+ infinity”. 
 
-Currently, errors are not incorporated into the fits. This is something we intend to remedy. 
+RMSE is calculated using only x-values that are not singularities. Therefore a relatively low RMSE does not guarantee a better fit. I indicate the presence of one or more singularities with a “+ infinity”. 
+
+
+Currently, errors are not incorporated into the fits. This is something I intend to remedy at some point. 
 
 
 ### The Graph
@@ -81,11 +89,14 @@ Currently, errors are not incorporated into the fits. This is something we inten
 
 The initial graph centering and scale are determined by the data points, but students may zoom out and in. They may also click and drag the graph so as to recenter it. 
 
+
 As of now, there is a limit on how far a student may zoom in. The limit exists to prevent the graph from getting funky. 
+
 
 Also, the drag feature does not regraph during the dragging. The graph will be redrawn once the drag has been completed. Dragging does not change the scale. The center of the graph will change in proportion to the drag’s magnitude and direction. 
 
-It would be nice to see the graph moving during a drag. We may or may not expend the energy to make this happen. 
+
+It would be nice to see the graph moving during a drag (as in Desmos' graphing calculator). I may or may not expend the energy to make this happen. 
 
 
 ##### References
