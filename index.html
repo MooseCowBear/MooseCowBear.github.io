@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>plttr</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link rel="stylesheet" type="text/css" href="styles.css"> 
+	<script src ="/plttr.js" defer></script> 
+
+</head>
+
+<body>
+<h1>plttr</h1>
+
+<noscript>
+        	<p>Oops! This website requires a JavaScript-enabled browser.</p>
+</noscript>
+
+<div class="grid-container">
+ 
+    <div class = "table-div">
+		<table id = "table">
+  			<tr>
+          			<th id = "exclude">exclude</th>
+    				<th id = "x-col" class = "cell" contenteditable = true>x</th>
+      				<th id = "y-col" class = "cell" contenteditable = true>y</th>
+    				<th id = "x-err" class = "cell" contenteditable = false>&plusmn; x</th>
+    				<th id = "y-err" class = "cell" contenteditable = false>&plusmn; y</th>
+  			</tr>
+     
+ 			<tr>
+        			<td class = "checkbox-cell">
+					<label class = "container">
+						<input type="checkbox"> 
+          					<span class="checkmark"></span>
+					</label>
+				</td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+   				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+        
+  			</tr>
+  			<tr>
+          			<td class = "checkbox-cell">
+					<label class = "container">
+						<input type="checkbox"> 
+          					<span class="checkmark"></span>
+					</label>
+				</td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+   				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+  			</tr>
+  			<tr>
+				<td class = "checkbox-cell">
+					<label class = "container">
+						<input type="checkbox"> 
+          					<span class="checkmark"></span>
+					</label>
+				</td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+   				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+  			</tr>
+  			<tr>
+          			<td class = "checkbox-cell">
+					<label class = "container">
+						<input type="checkbox"> 
+          					<span class="checkmark"></span>
+					</label>
+				</td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+   				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+  			</tr>
+ 			<tr>
+        			<td class = "checkbox-cell">
+					<label class = "container">
+						<input type="checkbox"> 
+          					<span class="checkmark"></span>
+					</label>
+				</td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+   				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+  			</tr>
+ 			<tr>
+        			<td>
+					<label class = "container">
+						<input type="checkbox"> 
+          					<span class="checkmark"></span>
+					</label>
+				</td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+   				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+  			</tr>
+			<tr>
+        			<td>
+					<label class = "container">
+						<input type="checkbox"> 
+          					<span class="checkmark"></span>
+					</label>
+				</td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+   				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+  			</tr>
+			<tr>
+        			<td>
+					<label class = "container">
+						<input type="checkbox"> 
+          					<span class="checkmark"></span>
+					</label>
+				</td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+   				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+    				<td><div class = "cell-div"><input class = "edit-cell" type="text"></div></td>
+  			</tr>
+		</table>
+ 	</div> <!-- end table-div-->
+
+  
+  
+    	<div id = "table-btns-div">
+  		<button class= "table-btn hov" id="row">Add Data</button>
+  		<button class = "table-btn hov" id = "col">Add Formula</button>
+		<button class = "table-btn hov" id = "clear-everything">Clear Everything</button>
+  	</div> <!--end btns-->
+  
+
+  	<div class="fit-select-container">
+     	
+		<ul id="fit-navbar"> 
+       			<li class="dropdown">
+				<button class= "fit-button hov" id = "independent">horizontal axis</button>
+    				<div class="dropdown-content" id = "independent-dropdown">
+      					<div class = "dropdown-option x-dropdown" >x</div>
+					<div class = "dropdown-option y-dropdown">y</div>
+					<div class = "dropdown-option x-err-dropdown">&plusmn; x</div>
+					<div class = "dropdown-option y-err-dropdown">&plusmn; y</div>
+    				</div>
+  			</li> 
+				
+			<li class = "dropdown">
+				<button class= "fit-button hov" id = "independent-err">horizontal error</button>
+    				<div class="dropdown-content" id = "independent-err-dropdown">
+					<div class = "dropdown-option none-dropdown">none</div>
+      					<div class = "dropdown-option x-dropdown" >x</div>
+					<div class = "dropdown-option y-dropdown">y</div>
+					<div class = "dropdown-option x-err-dropdown">&plusmn; x</div>
+					<div class = "dropdown-option y-err-dropdown">&plusmn; y</div>
+    					</div>
+			</li> 
+
+			<li class = "dropdown">
+				<button class = "fit-button hov" id = "dependent">vertical axis</button>
+     				<div class="dropdown-content" id = "dependent-dropdown">
+      					<div class = "dropdown-option x-dropdown">x</div>
+					<div class = "dropdown-option y-dropdown">y</div>
+					<div class = "dropdown-option x-err-dropdown">&plusmn; x</div>
+					<div class = "dropdown-option y-err-dropdown">&plusmn; y</div>
+    				</div>
+  			</li> 
+
+			<li class = "dropdown">
+				<button class= "fit-button hov" id = "dependent-err">vertical error</button>
+    				<div class="dropdown-content" id = "dependent-err-dropdown">
+					<div class = "dropdown-option none-dropdown">none</div>
+      					<div class = "dropdown-option x-dropdown">x</div>
+					<div class = "dropdown-option y-dropdown">y</div>
+					<div class = "dropdown-option x-err-dropdown">&plusmn; x</div>
+					<div class = "dropdown-option y-err-dropdown">&plusmn; y</div>
+    				</div>
+			</li> 
+
+			<li class = "dropdown">
+				<button class = "fit-button hov" id = "fit-selector">fit selector</button>
+				<div class = "dropdown-content" id = "fit-dropdown">
+					<div class = "dropdown-option">Linear</div>
+					<div class = "dropdown-option">Proportional</div>
+					<div class = "dropdown-option">Exactly Proportional</div>
+					<div class = "dropdown-option">Square Law</div>
+					<div class = "dropdown-option">Quadratic</div>
+					<div class = "dropdown-option">Inverse</div>
+					<div class = "dropdown-option">Inverse Square</div>
+					<div class = "dropdown-option">Square Root</div>
+					<div class = "dropdown-option">Power Law</div>
+					<div class = "dropdown-option">Exponential</div>
+					<div class = "dropdown-option">No Relation</div>
+					<div class = "dropdown-option">None</div> <!--graphs data only-->
+				</div>
+			</li>
+		</ul>
+  	</div>
+</div> <!--end grid container-->
+
+<div id = "graph-div">
+	<div id = "fit-report"><p id = "equation"></p><p id = "coefs"></p><p id = "rmse"></p>
+	</div>
+  	<canvas id="graph" width="880" height="530"></canvas> <!--appears centered but not clear why... NEED TO NOT HAVE DIMENSIONS-->
+  
+  	<div id = "graph-btns-div">
+  		<button class= "graph-btn hov" id="refit">Refit</button>
+  		<button class = "graph-btn hov" id = "clear-graph">Clear Graph</button>
+		<button class = "graph-btn hov" id = "zoom-in">+</button>
+		<button class = "graph-btn hov" id = "zoom-out">-</button>
+  	</div> 
+</div>
+
+<div id="formModal" class="modal"> 
+
+	<div class="modal-content">
+    
+		<div id = "calc-contain"> <!--grid, 2 cols-->
+                
+      			<div class="title"> <!--first elem in the grid, position 0, 0-->
+      					<h2> add a formula </h2>
+  			</div> <!--end title-->
+      
+		
+      			<div id = "close-div"> <!--second elem in the grid, position 0, 1-->
+				<span id="close">&times;</span>
+			</div>
+		
+      
+      			<div id = "formula-calc-header"> <!--third elem in grid, position, 1, 0-->
+				
+				<div id="invalid-formula">
+					<p>invalid formula</p>
+				</div> 
+
+  				<div class="calculator-screen"></div>
+
+				<div id = "name-col"> 
+					<div id = "name-input-label">add a name:</div>
+					<input type ="text" id="name" value="">
+				</div>
+
+			</div> <!--end formula-calc-header div-->
+
+      			<div id="col-names"> <!--fourth elem in grid, position 1, 1-2-->
+      				<button id = "x-btn" class="col-btn hov">x</button>
+      				<button id = "y-btn" class="col-btn hov">y</button>
+      				<button id = "x-err-btn" class="col-btn hov">&plusmn; x</button>
+      				<button id = "y-err-btn" class="col-btn hov">&plusmn; y</button>
+      			</div> <!--end col-names-->
+      
+  			<div class="calculator-keys"> <!--fifth elem in grid, position 2, 0-->
+
+    				<button id = "del" class = "calc-btn hov"> del </button>
+				<button id = "left-paren" class = "calc-btn hov"> ( </button>
+				<button id = "right-paren" class = "calc-btn hov"> ) </button>
+				<button id = "pow" class = "calc-btn hov"> ^ </button> 
+
+				<button id = "seven" class = "calc-btn hov"> 7 </button>
+				<button id = "eight" class = "calc-btn hov"> 8 </button>
+				<button id = "nine" class = "calc-btn hov"> 9 </button>
+				<button id = "divide" class = "calc-btn hov"> / </button>
+		
+				<button id = "four" class = "calc-btn hov"> 4 </button>
+				<button id = "five" class = "calc-btn hov"> 5 </button>
+				<button id = "six" class = "calc-btn hov"> 6 </button>
+				<button id = "multiply" class = "calc-btn hov"> x </button>
+		
+				<button id = "one" class = "calc-btn hov"> 1 </button>
+				<button id = "two" class = "calc-btn hov"> 2 </button>
+				<button id = "three" class = "calc-btn hov"> 3 </button>
+				<button id = "subtract" class = "calc-btn hov"> - </button>
+	
+				<button id = "zero" class = "calc-btn hov"> 0 </button>
+				<button id = "point" class = "calc-btn hov"> . </button>
+				<button id = "plusminus" class = "calc-btn hov"> &plusmn; </button>
+				<button id = "add" class = "calc-btn hov"> + </button>
+
+				<button id = "pi" class = "calc-btn hov"> &pi; </button>
+				<button id = "e" class = "calc-btn hov"> e </button>
+				<button id = "abs" class = "calc-btn hov"> abs </button>
+				<button id = "slope" class = "calc-btn hov"> rate of change </button>	
+		
+				<button id = "sin" class = "calc-btn hov"> sin </button>
+				<button id = "cos" class = "calc-btn hov"> cos </button>
+				<button id = "tan" class = "calc-btn hov"> tan </button>
+				<button id = "sqRoot" class = "calc-btn hov"> &#8730; </button>
+		
+				<button id = "natLog" class = "calc-btn hov"> ln </button>
+				<button id = "log" class = "calc-btn hov"> log10 </button>
+				<button id = "log2" class = "calc-btn hov"> log2 </button>
+				<button id = "cancel" class = "calc-btn hov"> cancel </button>
+
+				<button id = "clear" class = "calc-btn hov"> clear </button>
+				<button id = "submit" class = "calc-btn hov"> submit </button>
+
+  			</div> <!--end calculator keys-->
+		</div> <!--end calc contains-->
+	</div> <!--end modal content-->
+</div> <!--end modal/formModal-->
+
+</body>
+
+</html>
